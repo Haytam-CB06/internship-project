@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', path='test.css') }}">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JSON Upload and Bar Graph</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="{{ url_for('static', path='test.js') }}" defer></script>
+
+</head>
+<body>
+    
+  <div id ='graph-container' class="container">
+    <h2>Upload Your Data File</h2>
+<div class="container1">
+		<form>
+			<label for="arquivo">Choose a file:</label>
+			<input  class="inpdddut"  id="fileInput" type="file">
+		</form>
+	</div>
+     <h2>Graphs</h2>
+
+     <div id="gaphs" class="graphs">
+     <div id ='graph-container1' class="container-graph">
+      <input type="text" id="Xaxis1"placeholder="enter X axis "><br>
+      <input type="text" id="Yaxis1"placeholder="enter Y axis ">
+      <button onclick="uploadFile()" class="input">Upload</button><br>
+        <button onclick="setcharttype('line')">line</button>
+        <button onclick="setcharttype('bar')">bar</button>
+        <button onclick="setcharttype('doughnut')">doughnut</button>
+  <canvas id="myChart" width="300" height="300"></canvas></div>
+
+
+  <div id ='graph-container2' class="container-graph">
+        <input type="text" id="Xaxis2"placeholder="enter X axis "><br>
+        <input type="text" id="Yaxis2"placeholder="enter Y axis ">
+        <button onclick="uploadFile()" class="input">Upload</button><br>
+        <button onclick="setcharttype('line')">line</button>
+        <button onclick="setcharttype('bar')">bar</button>
+        <button onclick="setcharttype('doughnut')">doughnut</button>
+  <canvas id="myChart2" width="300" height="300"></canvas></div>
+
+
+  <div id ='graph-container3' class="container-graph">
+        <input type="text" id="Xaxis3"placeholder="enter X axis "><br>
+        <input type="text" id="Yaxis3"placeholder="enter Y axis ">
+        <button onclick="uploadFile()" class="input">Upload</button><br>
+        <button onclick="setcharttype('line')">line</button>
+        <button onclick="setcharttype('bar')">bar</button>
+        <button onclick="setcharttype('doughnut')">doughnut</button>
+  <canvas id="myChart3" width="300" height="300"></canvas></div>
+
+  
+
+  
+</div></div>
+
+  <button onclick="addGraphBox()">Add Graph</button>
+
+</body>
+</html>

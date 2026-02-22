@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN</title>
+  <meta name="viewport" content="with=device-width", initial-scale="1.0">
+  <link rel="stylesheet" href="{{ url_for('static', path='main.css') }}">  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+  <body>
+    
+    <section class="header">
+     <!---- <button class="button" id="form-open" onclick="window.location.href='/login'">LOGIN</button>-->
+  <nav>
+    
+    <!--<a href="/"><img src='/static/images/free-shipping.png'></a>-->
+    <div class="nav-links" id="navlinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+    <li><a href="/" class=""><b>Home</b></a></li>
+    <li><a href="/about" class="#"><b>About</b></a></li>
+    <li><a href="/services" class="#"><b>Services</b></a> </li>
+    <li><a href="/contact" class="#"><b>Contact</b></a></li>
+          <button class="button" id="form-open" onclick="window.location.href='/login'">LOGIN</button>
+</ul>
+    </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+     <div class="text-box">
+      <h1 >"Turn raw data into beautiful insights."</h1>
+      <p>Your all-in-one tool to turn raw data into powerful visual insights.</p>
+    </div></section>
+
+    <section >
+      <div class="course">
+        <h2>PROJECT OVERVIEW</h2>
+        <div class="row">
+          <div class="course-col">
+            
+        <p>This project helps small businesses visualize sales data through interactive dashboards,
+          and empowers them to make data-driven decisions by presenting their sales metrics in an intuitive and interactive format.
+        </p></div>
+
+        <div class="course-col">
+        <p style="text-align: center;"><b> "graphs make life easier"</b></p>
+        <p>that's what we heard in high school. Years later, after learning more about data, we found that transforming any type of data into a graph makes analysis easier.
+        </p>
+      </div>
+      <div class="course-col">
+        <p>The platform serves as a valuable tool for data analysts, enabling them to convert large volumes 
+          of raw data into clear visual narratives.It streamlines the data exploration process, allowing analysts to uncover patterns
+          , correlations, and outliers with ease.
+        </p>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+    </section>
+    <section class="footer">
+      <h1> AFRICA </h1>
+      <p><b> Morocco:</b>	
+      Casablanca Nearshore Park, Shore 1
+      1100, boulevard Al Qods - Sidi Maârouf
+      20270 Casablanca
+      Tel: + 212 529 045 000<br>	 
+      IPRC - an HPS Company
+      Bureau 802, TechnoPark
+      Casablanca
+      Tel: + 212 522 875 012</p>
+      <p><b>Republic of Mauritius:</b>	ICPS - an HPS Company
+      7th floor, The Docks 2 
+      Caudan St, Port-Louis 11307
+      Tel: + 230 405 0850</p>
+      <h1>Middle East & Asia</h1>
+      <p><b>Dubai:</b>	Unit 363 – 368 Offices
+    Building 17, Dubai Internet City
+    PO Box 500308, Dubai
+    United Arab Emirates
+    Tel: +971 4 390 0750
+    Fax: +971 4 390 8678</p>
+      <p><b>Singapore:</b>	Park Crescent #02-02
+    Plaza 8 @CBP
+    486025 Singapore
+    Tel: + 65 6408 0732
+    Fax: +65 6408 0601</p>
+    <h1>Europe & Americas</h1>
+      <p><b>France:</b>	65-67, rue Faubourg St Honoré
+    75008 Paris
+    Tel: + 33 1 58 18 01 34 <br>	805 Avenue Guillibert Gauthier de la Lauzière
+    13290 Aix-en-Provence
+    Tel: + 33 4 42 91 42 99
+    Fax: + 33 4 42 65 05 88
+  </p>
+  <p><b>Canada: </b>	
+  1300, rue Sherbrooke Ouest,
+  Bureau 400 Montréal
+  Tel: +1 438 951 3374
+  </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+      var navlinks=document.getElementById("navlinks");
+      function showmenu(){
+        navlinks.style.right="0";
+      }
+      function hidemenu(){
+        navlinks.style.right="-200px";
+      }
+    </script>
+     </body></html></style>

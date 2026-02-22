@@ -1,0 +1,10 @@
+[
+  {"category": "A", "haytam": 10},
+  {"category": "B", "haytam": 20},
+  {"category": "A", "haytam": 30},
+  {"category": "R", "haytam": 40},
+  {"category": "E", "haytam": 20},
+  {"category": "B", "haytam": 45},
+  {"category": "T", "haytam": 23},
+  {"category": "V", "haytam": 5}
+]

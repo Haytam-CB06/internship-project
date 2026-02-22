@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='login.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="header">
+  <nav>
+  <div class="nav-links" id="navlinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+    <li><a href="/" class=""><b>Home</b></a></li>
+    <li><a href="/about" class="#"><b>About</b></a></li>
+    <li><a href="/services" class="#"><b>Services</b></a> </li>
+    <li><a href="/contact" class="#"><b>Contact</b></a></li>
+     <button class="button" id="form-open" onclick="window.location.href='/signup'">SIGNUP</button>
+</ul></div>
+<i class="fa fa-bars" onclick="showmenu()"></i>
+</nav>
+    
+<section class="home"  >
+  <div class="form">
+<!--LOGIN FORM-->
+    <h1>Login</h1>
+   <span class="input-span">
+    <label for="username" class="label"></label>
+    <input required type="text" placeholder="enter your username" id="username" required/>
+   <i class='bx bx-user' ></i>
+   </span>
+   <span class="input-span">
+    <label for="text" class="label"></label>
+    <input required type ="password" placeholder="password" id="password"required/>
+    <i class='bx bx-low-vision' id = "eyeicon" ></i>    
+    </span>   
+ <!-- BUTTON-->
+   <button class="animated-button"  onclick="login()"  >
+  <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 
+      12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text" >Log In</span>
+  <span class="circle"></span>
+  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"></path>
+  </svg>
+</button>
+    
+   <div class="span"><p> Don't have an account?</p><a href="/signup" id="signup" >Register</a></div>
+</div>
+
+</div>
+</section>
+    </body> 
+ </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!------javascript--code----->
+<script src="{{ url_for('static', path='login.js') }}" defer></script>

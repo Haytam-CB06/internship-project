@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <title>Admin</title>
+          <link rel="stylesheet" href="{{ url_for('static', path='login.css') }}">
+    </head>
+    <body style="background-color: rgb(97, 86, 86);" >
+    <form action="POST" action="http://localhost:8000/admin_dashboard/" entype="multipart/form-data">
+    <nav>
+  <div class="nav-links" id="navlinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+    <li><a href="/" class=""><b>Home </b></a></li> 
+    <li><a href="/about" class="#"><b>About</b></a></li>
+    <li><a href="/services" class="#"><b>Services</b></a> </li>
+    <li><a href="/contact" class="#"><b>Contact</b></a></li>
+    </ul></div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+        <input type="file" name="file_uploads" multiple>
+        <button type="submit" href="/templates/user_dashboard.html">Submit</button>
+    </form>
+    </body>
+</html>
+<script src="{{ url_for('static', path='signup.js') }}" defer></script>-->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Admin Test Page</title>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <h2>Upload JSON File</h2>
+  <form id="upload-form" enctype="multipart/form-data" method="post" action="/upload">
+    <input type="file" name="file" accept=".json" required />
+    <button type="submit" >Upload</button>
+  </form>
+
+  <h3>Chart from Uploaded File</h3>
+  <canvas id="adminChart" width="600" height="400"></canvas>
+
+  

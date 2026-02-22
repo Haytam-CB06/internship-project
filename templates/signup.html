@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LOGIN</title>
+  <meta name="viewport" content="with=device-width", initial-scale="1.0">
+  <link rel="stylesheet" href="{{ url_for('static', path='login.css') }}">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <section class="header">
+  <nav>
+ <div class="nav-links" id="navlinks">
+      <i class="fa fa-times" onclick="hidemenu()"></i>
+      <ul>
+    <li><a href="/" class=""><b>Home</b></a></li>
+    <li><a href="/about" class="#"><b>About</b></a></li>
+    <li><a href="/services" class="#"><b>Services</b></a> </li>
+    <li><a href="/contact" class="#"><b>Contact</b></a></li>
+    <button class="button" id="form-open" onclick="window.location.href='/login'">LOGIN</button>
+     </ul>
+    </div>
+    <i class="fa fa-bars" onclick="showmenu()"></i>
+    </nav>
+    
+<section class="home"  >
+  <form id="signupForm" method="post" action="/signup">
+  <div class="form">
+    <h1>SignUp</h1>
+   <span class="input-span">
+    <label for="username" class="label"></label>
+    <input type="text" placeholder="username" id="username" required/>
+    <i class='bx bx-envelope'></i>  </span>
+
+    <span class="input-span">
+    <label for="password" class="label"></label>
+    <input type="password" placeholder="password" id="password" required/>
+    <i class='bx bx-low-vision' id = "eyeicon" ></i></span>
+
+    <span class="input-span">
+    <label for="password" class="label"></label>
+    <input type="password" placeholder="comfirm password" id="comfrim_password" required/>
+    </span>
+
+    <div class="remember-forgot">
+    <label><input type="checkbox" id="terms">I agree on conditions and terms required</label> 
+    <a href="#"></a></div>
+
+
+    <!--admin or user signup-->
+      
+    <select id="role">
+  <option value="" disabled selected hidden Select Role>role</option>
+  <option value="user" >User</option>
+  <option value="admin">Admin</option>
+</select>
+<input type="text" placeholder="Admin Code (if admin)" id="admin_code" />
+
+    <!--singup BUTTON-->
+   <button class="animated-button" onclick="singup()">
+  <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg" >
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 
+      12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+  <span class="text" >sign up</span>
+  <span class="circle"></span>
+  <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+    ></path>
+  </svg>
+</button>
+  
+   <div class="span"><p>already have an account?</p><a href="/login" id="login">LogIn</a></div>
+</div>
+</div>
+</section>
+</section>
+</body>
+
+<!-----javascrip--code----->
+
+<script src="{{ url_for('static', path='signup.js') }}" defer></script>
+     </body></html>
+
+
+
